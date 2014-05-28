@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>tus Tacos Estan Listos!!! :D</h1>
+        <h1>Tus Tacos Estan Listos!!! :D</h1>
     </body>
 </html>
