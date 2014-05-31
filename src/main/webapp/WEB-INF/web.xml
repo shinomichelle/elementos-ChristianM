@@ -5,9 +5,17 @@
         <servlet-name>Conejo</servlet-name>
         <servlet-class>carrillo.cuentas.controladores.ServletCrearCuenta</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Perro</servlet-name>
+        <servlet-class>carrillo.cuentas.controladores.ServletRegistro</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Conejo</servlet-name>
         <url-pattern>/Chapo.Guzman</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Perro</servlet-name>
+        <url-pattern>/registro</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
