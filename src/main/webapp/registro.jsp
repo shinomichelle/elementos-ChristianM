@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-       ${registro.getPerro().obtenerRegistro()}
+       ${registro.getMascota.obtenerRegistro()}
     </body>
 </html>

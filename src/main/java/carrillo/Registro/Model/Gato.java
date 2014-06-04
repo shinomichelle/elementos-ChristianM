@@ -3,29 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package carrillo.Registro.Model;
 
 /**
  *
  * @author T107
  */
-public class Perro implements Mascota {
+public class Gato implements Mascota{
+    private String nombre;
 
-    private static String nombre;
-    
-    public Perro() {
-    }
     @Override
     public String obtenerRegistro() {
-        return "El Perro que registraste es: " + nombre;
+        return "El Gato que registraste es: " + nombre;
     }
-
-    public static String getNombre() {
+    
+    public String getNombre() {
         return nombre;
     }
 
-    public static void setNombre(String aNombre) {
-        nombre = aNombre;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
-
+    
 }

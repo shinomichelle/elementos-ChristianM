@@ -5,6 +5,8 @@
  */
 package carrillo.cuentas.controladores;
 
+import carrillo.Registro.Model.Gato;
+import carrillo.Registro.Model.Mascota;
 import carrillo.Registro.Model.Perro;
 import carrillo.Registro.Model.Persona;
 import java.io.IOException;
@@ -32,11 +34,12 @@ public class ServletRegistro extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        Perro p = new Perro();
-        p.setNombre("Como tu");
+      
+        ServicioMascota m = new ServicioMascota();
+        
         Persona x = new Persona();
-        x.setPerro(p);
+        x.setMascota(mascota);
+        
         request.setAttribute("registro", x);
         RequestDispatcher despachador=request.getRequestDispatcher("/registro.jsp");
         despachador.forward(request, response);

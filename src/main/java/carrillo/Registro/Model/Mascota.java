@@ -10,16 +10,10 @@ package carrillo.Registro.Model;
  *
  * @author T107
  */
-public class Persona {
+
+public interface Mascota {
     
-    private Mascota mascota;
-
-    public Mascota getMascota() {
-        return mascota;
-    }
-
-    public void setMascota(Mascota mascota) {
-        this.mascota = mascota;
-    }
-        
+    public String obtenerRegistro();
+     
+    
 }
